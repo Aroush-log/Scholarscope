@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ScholarScope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ScholarScope</h2>
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>Find scholarships built for you.</h1>
+
+        <p>
+            Discover scholarship opportunities that match your goals,
+            interests, and achievements.
+        </p>
+
+        <button onclick="showProfile()">
+            Create Your Profile
+        </button>
+
+    </section>
+
+
+    <section id="profile" class="hidden">
+
+        <h2>Tell us about yourself</h2>
+
+
+        <label>Current Grade</label>
+
+        <select id="grade">
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+            <option>Grade 11</option>
+            <option>Grade 12</option>
+        </select>
+
+
+        <label>Country</label>
+
+        <input id="country" placeholder="Your country">
+
+
+        <label>Field of Interest</label>
+
+        <select id="interest">
+
+            <option>Computer Science</option>
+            <option>Engineering</option>
+            <option>Medicine</option>
+            <option>Business</option>
+            <option>Arts</option>
+            <option>Social Sciences</option>
+
+        </select>
+
+
+        <label>Your Strengths</label>
+
+        <select id="strength">
+
+            <option>Research</option>
+            <option>Coding</option>
+            <option>Leadership</option>
+            <option>Volunteering</option>
+            <option>Entrepreneurship</option>
+
+        </select>
+
+
+        <button onclick="findScholarships()">
+            Discover Matches
+        </button>
+
+
+    </section>
+
+
+    <section id="results" class="hidden">
+
+        <h2>Your Scholarship Matches</h2>
+
+        <div id="matches"></div>
+
+    </section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
