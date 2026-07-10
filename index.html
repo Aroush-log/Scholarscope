@@ -8,90 +8,80 @@
 
 <body>
 
-    <nav>
-        <h2>ScholarScope</h2>
-    </nav>
+<header>
+    <div class="logo">ScholarScope</div>
+</header>
 
 
-    <section class="hero">
+<main>
 
-        <h1>Find scholarships built for you.</h1>
+<section class="hero">
 
-        <p>
-            Discover scholarship opportunities that match your goals,
-            interests, and achievements.
-        </p>
+<h1>Find scholarships that match <span>your future.</span></h1>
 
-        <button onclick="showProfile()">
-            Create Your Profile
-        </button>
+<p>
+ScholarScope helps students discover scholarship opportunities
+based on their interests, strengths, and goals.
+</p>
 
-    </section>
+<button id="startBtn">Find My Matches</button>
 
-
-    <section id="profile" class="hidden">
-
-        <h2>Tell us about yourself</h2>
+</section>
 
 
-        <label>Current Grade</label>
+<section id="formSection" class="box hidden">
 
-        <select id="grade">
-            <option>Grade 9</option>
-            <option>Grade 10</option>
-            <option>Grade 11</option>
-            <option>Grade 12</option>
-        </select>
+<h2>Create your student profile</h2>
 
+<label>What is your field of interest?</label>
 
-        <label>Country</label>
-
-        <input id="country" placeholder="Your country">
-
-
-        <label>Field of Interest</label>
-
-        <select id="interest">
-
-            <option>Computer Science</option>
-            <option>Engineering</option>
-            <option>Medicine</option>
-            <option>Business</option>
-            <option>Arts</option>
-            <option>Social Sciences</option>
-
-        </select>
+<select id="interest">
+<option value="cs">Computer Science</option>
+<option value="business">Business</option>
+<option value="medicine">Medicine</option>
+<option value="engineering">Engineering</option>
+<option value="arts">Arts</option>
+</select>
 
 
-        <label>Your Strengths</label>
+<label>Your strongest area:</label>
 
-        <select id="strength">
-
-            <option>Research</option>
-            <option>Coding</option>
-            <option>Leadership</option>
-            <option>Volunteering</option>
-            <option>Entrepreneurship</option>
-
-        </select>
+<select id="strength">
+<option value="research">Research</option>
+<option value="leadership">Leadership</option>
+<option value="coding">Coding</option>
+<option value="community">Community Service</option>
+<option value="creative">Creativity</option>
+</select>
 
 
-        <button onclick="findScholarships()">
-            Discover Matches
-        </button>
+<label>Your goal:</label>
+
+<select id="goal">
+<option value="merit">Academic Achievement</option>
+<option value="impact">Social Impact</option>
+<option value="innovation">Innovation</option>
+<option value="financial">Financial Support</option>
+</select>
 
 
-    </section>
+<button id="matchBtn">
+Generate Matches
+</button>
+
+</section>
 
 
-    <section id="results" class="hidden">
+<section id="results" class="box hidden">
 
-        <h2>Your Scholarship Matches</h2>
+<h2>Your Scholarship Matches</h2>
 
-        <div id="matches"></div>
+<div id="output"></div>
 
-    </section>
+</section>
 
+
+</main>
 
 
 <script src="script.js"></script>
